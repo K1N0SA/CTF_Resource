@@ -1,0 +1,34 @@
+Notes on how-to setup for CTF challenges
+----------------------------------------
+
+word-list for cracking
+----------------------
+rockyou.txt - words containing lots of english words. ( available on google ) 
+
+
+tools for cracking password
+---------------------------
+git clone john the ripper and follow the "installation" for ubuntu
+compile and make
+after that run $ ./john --wordlist=rockyou.txt filethatyouwannacrack.txt
+if you are still not able to do it, delete the john.pot file
+
+
+exiftool for picture file
+
+install hopper in ubuntu or linux ( chiper ) hopper disassembler
+
+https://github.com/krishnasrinivas/wetty   ( terminal over web-browser )
+
+
+bash shell range
+----------------
+
+for i in {1..25};do echo $i; done;
+
+curl -s ( download page using curl s stands for static download)
+
+cut -d  ( delimeter cut )
+
+tac ( reverse the order )
+
