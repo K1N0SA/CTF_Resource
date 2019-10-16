@@ -20,6 +20,28 @@ install hopper in ubuntu or linux ( chiper ) hopper disassembler
 
 https://github.com/krishnasrinivas/wetty   ( terminal over web-browser )
 
+steganography challenge: tool
+-------/-----/--------/-/-/-/-/
+
+stegsolve 
+
+zsteg ( pic decoder )
+
+zabrtools
+
+foremost 
+
+quipquip
+
+#java -jar stegsolve.jar (command line in ubuntu )
+
+chipher challenges: tool 
+--------/-----/---------
+
+#apt install bsdgames  ( ubuntu )
+#export PATH=$PATH:/usr/games
+#echo $PATH
+
 
 bash shell range
 ----------------
