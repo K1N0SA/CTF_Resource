@@ -1,0 +1,58 @@
+Base64 CLI Decoding
+-------------------
+
+echo "base64_string" | base64 -d
+
+
+cat readme.extension | tr "-" "\n"       ( separate them by line ) 
+
+
+cat readme.extension | tr "-" "\n" |  while read line; do echo $line | base64 -d ; done
+
+
+test before extracting
+----------------------
+
+ls | while read line; do echo $line; done
+
+ls | while read line; do steghide extract -sf $line -p password; done
+
+
+finding files using base64 decode
+---------------------------------
+
+find | xargs cat | base64 -d | strings -n 10
+
+
+using this on hydra
+-------------------
+
+hydra -L wordlist -P wordlist ip.ip.ip.ip ssh
+
+
+generating a wordlist using rsmangler
+--------------------------------------
+
+rsmangler -m 6 -x 8 -r -d -e -i --punctuation -y -a -C --pna --nb --space --allow-duplicates -f wordlists2 -o mangled
+
+
+
+awk command
+-----------
+
+awk -F"t" '{print $4}' filename.txt > fileout.txt
+
+find | xargs cat 2>/dev/null | base64 -d | strings -n 10
+
+find | xargs cat 2>/dev/null | base64 -d | strings -n 8
+
+
+
+when you ls a filename and want to strip the dot extension on the front or back
+--------------------------------------------------------------------------------
+
+ls | grep .jpg | sed s/\.jpg//  > wordlist
+
+or
+
+cat wordlist | sed s/img_// > wordlist2
