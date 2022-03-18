@@ -1,0 +1,29 @@
+
+cat file_name.txt | xclip  ( this copies the file to a clipboard so you can ctrl+v and paste it to another place ) 
+
+
+curl script
+----------
+
+
+curl "http://$IP" -H "User-Agent:A" -L
+
+curl "http://ip_address_of_target" -H "User-Agent: Agent A" -L   ( -L is for redirect )
+
+
+curl -s http://url   | head -n 20 | cut -d "'" -f2 | tail -n 8 | tac | tr -d "\n"
+
+curl -s ( to silence the curl command for anything extra )
+
+curl -X POST url-address.html
+
+
+curl -s ( download page using curl s stands for static download) 
+
+curl -s "https"//red.csaw.io/robots.txt" | grep -oE '<!--.*-->'| cut -d "-" -f3 | base64 -d
+
+
+
+curl "http://ip.ip.ip.ip/admin/" --coookie "SessionToken=anything"
+
+curl -LO https://ip.ip.ip.ip
